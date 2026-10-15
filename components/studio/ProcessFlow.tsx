@@ -7,10 +7,10 @@ import { useLayoutEffect, useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const process = [
-  { title: "Discover", detail: "Clarify the context, audience, constraints, and goals." },
-  { title: "Define", detail: "Agree the brief, deliverables, timing, and direction." },
-  { title: "Develop", detail: "Explore and refine a visual route against the brief." },
-  { title: "Deliver", detail: "Prepare the final files and agreed applications." },
+  { title: "Understand", detail: "Clarify the audience, context, goals, and constraints." },
+  { title: "Set direction", detail: "Agree the brief, scope, schedule, and visual route." },
+  { title: "Design", detail: "Explore, review, and refine the chosen direction." },
+  { title: "Prepare", detail: "Organize final files for the agreed applications." },
 ];
 
 export function ProcessFlow() {

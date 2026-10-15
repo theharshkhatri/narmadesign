@@ -65,13 +65,13 @@ export function ServicesSection() {
       <div className="site-container py-20 sm:py-28">
         <header className="mb-12 grid gap-6 md:grid-cols-12 md:items-end sm:mb-16">
           <div className="md:col-span-8">
-            <p className="mb-5 text-sm uppercase tracking-[0.14em] text-muted">Services</p>
+            <p className="mb-5 text-sm uppercase tracking-[0.14em] text-muted">Scope, by brief</p>
           <h2 id="services-heading" className="editorial-title max-w-3xl text-5xl leading-[0.94] tracking-[-0.055em] sm:text-7xl">
-              Design that works across platforms.
+              Possible outputs, clearly defined.
             </h2>
           </div>
           <p className="max-w-sm text-sm leading-6 text-muted md:col-span-4 md:justify-self-end">
-            Eight areas of design, each shown with its supplied category image.
+            This list is illustrative. Deliverables are agreed for each project.
           </p>
         </header>
 

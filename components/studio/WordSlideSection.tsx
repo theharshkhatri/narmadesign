@@ -72,7 +72,7 @@ export function WordSlideSection() {
         className="site-container flex min-h-[min(72vh,46rem)] flex-col justify-between py-16 sm:py-24"
       >
         <div className="flex items-start justify-between gap-8">
-          <p className="text-sm uppercase tracking-[0.14em] text-muted">Studio / Practice</p>
+          <p className="text-sm uppercase tracking-[0.14em] text-muted">Approach / Process</p>
           <p className="hidden max-w-xs text-right text-sm leading-6 text-muted sm:block">
             Working across identity, graphic design and visual exploration.
           </p>
@@ -91,7 +91,7 @@ export function WordSlideSection() {
           </h2>
         </div>
 
-        <p className="max-w-sm text-sm leading-6 text-muted">NARMA.DESIGN · Independent studio</p>
+        <p className="max-w-sm text-sm leading-6 text-muted">NARMA.design</p>
       </div>
     </section>
   );

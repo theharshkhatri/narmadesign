@@ -6,7 +6,7 @@ import { projects } from "@/content/projects";
 
 export const metadata = {
   title: "Work",
-  description: "The NARMA.DESIGN work archive.",
+  description: "Self-initiated NARMA.design studies in editorial design, packaging, and campaigns.",
 };
 
 export default function WorkPage() {
@@ -15,8 +15,9 @@ export default function WorkPage() {
       <SiteHeader />
       <main id="main-content">
         <PageIntro
-          title="Selected work."
-          description="A selection of NARMA portfolio work across editorial, packaging, and campaign design."
+          eyebrow="Work / Self-initiated studies"
+          title="Ideas explored in form."
+          description="A collection of undated design studies across editorial, packaging, and campaigns. Each is presented as a self-initiated concept."
         />
         <section className="site-container py-16 sm:py-24">
           <ProjectGrid projects={projects} />

@@ -208,7 +208,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
             </button>
             <div className="flex items-start justify-between gap-4 border-b border-ink/15 pb-5">
               <div>
-                <p className="mb-2 text-xs uppercase tracking-[0.12em] text-muted">Experimental study</p>
+                <p className="mb-2 text-xs uppercase tracking-[0.12em] text-muted">Self-initiated study</p>
                 <Link href={`/work/${project.slug}`} className="text-lg hover:underline focus-visible:underline">
                   {project.title}
                 </Link>

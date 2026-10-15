@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "NARMA.DESIGN",
-    template: "%s — NARMA.DESIGN",
+    default: "NARMA.design",
+    template: "%s — NARMA.design",
   },
-  description: "Independent creative studio prototype.",
+  description: "Identity systems, graphic and campaign design, and art direction for growing brands. Explore NARMA.design studies and approach.",
   icons: {
     icon: "/brand/narma-symbol.svg",
   },

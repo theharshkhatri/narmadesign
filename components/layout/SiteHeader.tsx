@@ -7,7 +7,7 @@ import { DiscoverLink } from "@/components/ui/DiscoverLink";
 
 const navigation = [
   { href: "/work", label: "Work" },
-  { href: "/studio", label: "Studio" },
+  { href: "/approach", label: "Approach" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -38,12 +38,12 @@ export function SiteHeader() {
         <Link
           href="/"
           className="shrink-0"
-          aria-label="NARMA.DESIGN home"
+          aria-label="NARMA.design home"
           onClick={() => setMenuOpen(false)}
         >
           <Image
             src="/brand/narma-wordmark.svg"
-            alt="NARMA.DESIGN"
+            alt="NARMA.design"
             width={162}
             height={54}
             priority

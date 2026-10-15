@@ -1,46 +1,19 @@
 "use client";
 
-import { FormEvent, useState } from "react";
 import { DiscoverButton } from "@/components/ui/DiscoverLink";
 import { capabilities } from "@/content/capabilities";
 
 export function ProjectInquiryForm() {
-  const [status, setStatus] = useState("");
-  const [pending, setPending] = useState(false);
-
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setStatus("");
-    setPending(true);
-    const form = event.currentTarget;
-    const data = new FormData(form);
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(data.entries())),
-      });
-      const result = (await response.json()) as { error?: string };
-      if (!response.ok) throw new Error(result.error ?? "The enquiry could not be submitted.");
-      setStatus("Your enquiry has been sent.");
-      form.reset();
-    } catch (error) {
-      setStatus(error instanceof Error ? error.message : "The enquiry could not be submitted.");
-    } finally {
-      setPending(false);
-    }
-  }
-
   return (
-    <form onSubmit={handleSubmit} className="space-y-8">
+    <form className="space-y-8" aria-describedby="prototype-form-notice">
       <p
         id="prototype-form-notice"
-        className="border border-ink/40 bg-gold/10 p-4 text-sm leading-6 text-muted"
+        className="border-l-2 border-ink bg-stone px-5 py-4 text-sm leading-6 text-muted"
       >
-        This form is not connected yet and will not send your enquiry. Please use the studio email
-        listed below instead.
+        Form preview only. It is not connected and will not send your enquiry. Use the email address below to contact NARMA.design.
       </p>
-      <div className="grid gap-8 sm:grid-cols-2">
+      <fieldset disabled className="grid gap-8 sm:grid-cols-2">
+        <legend className="sr-only">Enquiry form preview. Fields are disabled.</legend>
         <label className="flex flex-col gap-2 text-sm">
           Name
           <input
@@ -59,6 +32,7 @@ export function ProjectInquiryForm() {
             name="email"
             type="email"
             autoComplete="email"
+            spellCheck={false}
             aria-describedby="prototype-form-notice"
             className="border-b border-ink/50 bg-transparent px-0 py-3 outline-none transition-colors focus:border-ink"
           />
@@ -88,24 +62,24 @@ export function ProjectInquiryForm() {
             ))}
           </select>
         </label>
-      </div>
+      </fieldset>
       <label className="flex flex-col gap-2 text-sm">
         Project description
         <textarea
           required
           name="description"
           rows={5}
+          disabled
           className="resize-y border-b border-ink/50 bg-transparent px-0 py-3 outline-none transition-colors focus:border-ink"
         />
       </label>
       <label className="sr-only" aria-hidden="true">
         Leave this field empty
-        <input name="website" type="text" tabIndex={-1} autoComplete="off" />
+        <input name="website" type="text" tabIndex={-1} autoComplete="off" disabled />
       </label>
-      <DiscoverButton type="submit" disabled={pending} className="w-fit">
-        {pending ? "Checking enquiry" : "Send project enquiry"}
+      <DiscoverButton type="button" disabled className="w-fit">
+        Form unavailable
       </DiscoverButton>
-      {status ? <p role="status" aria-live="polite" className="text-sm text-muted">{status}</p> : null}
     </form>
   );
 }

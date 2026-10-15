@@ -1,10 +1,10 @@
 export const capabilities = [
-  { title: "Brand Identity Design", detail: "Logos, brand guidelines, typography, color systems, business cards, and visual identity.", image: "/category/optimized/1.webp" },
-  { title: "Social Media Design", detail: "Instagram posts, reels covers, YouTube thumbnails, and social media campaigns.", image: "/category/optimized/2.webp" },
-  { title: "Advertising & Marketing Design", detail: "Digital ads, promotional posters, banners, flyers, and marketing campaigns.", image: "/category/optimized/3.webp" },
-  { title: "UI/UX & Web Design", detail: "Website layouts, app interfaces, dashboards, wireframes, and prototypes.", image: "/category/optimized/4.webp" },
-  { title: "Packaging & Label Design", detail: "Product boxes, labels, bottles, food packaging, and retail packaging.", image: "/category/optimized/5.webp" },
-  { title: "Editorial & Print Design", detail: "Magazines, brochures, catalogs, books, newspapers, and printed materials.", image: "/category/optimized/6.webp" },
-  { title: "Illustration & Vector Art", detail: "Custom illustrations, icons, mascots, vector artwork, and character designs.", image: "/category/optimized/7.webp" },
-  { title: "Event & Environmental Design", detail: "Festival posters, stage backdrops, exhibition graphics, signage, banners, and large-format installations.", image: "/category/optimized/8.webp" },
+  { title: "Brand identity", detail: "Identity systems, logo design, typography, color, and practical guidelines.", image: "/category/optimized/1.webp" },
+  { title: "Social media", detail: "Social posts, covers, thumbnails, and campaign graphics for digital channels.", image: "/category/optimized/2.webp" },
+  { title: "Advertising & campaigns", detail: "Campaign visuals, digital ads, posters, banners, and flyers.", image: "/category/optimized/3.webp" },
+  { title: "Digital products", detail: "Website and app layouts, interface elements, wireframes, and prototypes.", image: "/category/optimized/4.webp" },
+  { title: "Packaging", detail: "Packaging concepts, labels, product graphics, and retail applications.", image: "/category/optimized/5.webp" },
+  { title: "Editorial & print", detail: "Publication layouts, brochures, catalogs, books, and printed materials.", image: "/category/optimized/6.webp" },
+  { title: "Illustration", detail: "Illustrations, icons, and vector artwork developed for a defined use.", image: "/category/optimized/7.webp" },
+  { title: "Events & environments", detail: "Exhibition graphics, signage, event materials, and spatial applications.", image: "/category/optimized/8.webp" },
 ];

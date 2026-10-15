@@ -41,23 +41,23 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </div>
             <div className="lg:col-span-4 lg:col-start-9 lg:pt-6">
-              <p className="text-sm uppercase tracking-[0.14em] text-muted">Experimental study / {project.year}</p>
+              <p className="text-sm uppercase tracking-[0.14em] text-muted">Self-initiated study / {project.year}</p>
               <h1 className="editorial-title mt-6 text-5xl leading-[0.92] tracking-[-0.06em] sm:text-7xl">{project.title}</h1>
               <p className="mt-8 text-lg leading-7 text-muted">{project.summary}</p>
               <dl className="mt-12 space-y-5 border-t border-ink/20 pt-5 text-sm">
-                <div className="flex justify-between gap-6"><dt className="text-muted">Study</dt><dd>{project.title}</dd></div>
-                <div className="flex justify-between gap-6"><dt className="text-muted">Focus</dt><dd className="text-right">{project.services.join(", ")}</dd></div>
+                <div className="flex justify-between gap-6"><dt className="text-muted">Format</dt><dd>Self-initiated concept</dd></div>
+                <div className="flex justify-between gap-6"><dt className="text-muted">Design focus</dt><dd className="text-right">{project.services.join(", ")}</dd></div>
               </dl>
             </div>
           </div>
           <div className="mt-20 grid gap-10 border-t border-ink/20 pt-8 sm:mt-28 sm:grid-cols-2">
             <div>
-              <p className="text-sm uppercase tracking-[0.14em] text-muted">Composition note</p>
+              <p className="text-sm uppercase tracking-[0.14em] text-muted">Design note</p>
               <h2 className="editorial-title mt-4 text-2xl tracking-[-0.03em]">{project.brief}</h2>
             </div>
             <div className="space-y-5 leading-7 text-muted">
               <p>{project.concept}</p>
-              <p>Approved NARMA portfolio artwork, shown as supplied. Client details and project dates have not been provided.</p>
+              <p>An undated, self-initiated study. No client relationship or project outcome is implied.</p>
             </div>
           </div>
         </article>

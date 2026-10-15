@@ -87,6 +87,7 @@ a {
   z-index: 40;
 }
 
+#work,
 #capabilities {
   scroll-margin-top: 5.5rem;
 }
@@ -355,7 +356,6 @@ a {
 }
 
 .site-footer::before {
-  animation: footer-aurora-drift 28s ease-in-out infinite alternate;
   background:
     radial-gradient(ellipse at 15% 76%, rgb(198 163 108 / 25%), transparent 54%),
     radial-gradient(ellipse at 52% 100%, rgb(233 227 217 / 12%), transparent 48%),
@@ -370,7 +370,6 @@ a {
 }
 
 .site-footer::after {
-  animation: footer-aurora-ribbon 34s ease-in-out infinite alternate;
   background: linear-gradient(
     164deg,
     transparent 38%,
@@ -387,24 +386,6 @@ a {
 .site-footer > .site-container {
   position: relative;
   z-index: 1;
-}
-
-@keyframes footer-aurora-drift {
-  from {
-    transform: translate3d(-2%, 0, 0) scale(1.06);
-  }
-  to {
-    transform: translate3d(2%, -2%, 0) scale(1.12);
-  }
-}
-
-@keyframes footer-aurora-ribbon {
-  from {
-    transform: translate3d(-3%, 2%, 0) rotate(-2deg);
-  }
-  to {
-    transform: translate3d(3%, -1%, 0) rotate(2deg);
-  }
 }
 
 .site-footer__link {
@@ -495,11 +476,6 @@ a {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .site-footer::before,
-  .site-footer::after {
-    animation: none;
   }
 
   *,

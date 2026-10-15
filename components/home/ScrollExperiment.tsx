@@ -7,7 +7,7 @@ import { useLayoutEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const stages = ["Form", "Shift", "Resolve"];
+const stages = ["Observe", "Compose", "Refine"];
 
 export function ScrollExperiment() {
   const scope = useRef<HTMLElement>(null);
@@ -58,13 +58,13 @@ export function ScrollExperiment() {
     <section ref={scope} className="relative overflow-hidden border-y border-ink/15 bg-stone" aria-labelledby="experiment-heading">
       <div data-study-stage className="site-container relative grid min-h-[min(720px,100svh)] items-center py-16 sm:py-20 lg:min-h-[min(760px,100svh)] lg:grid-cols-12">
         <div className="relative z-10 lg:col-span-6">
-          <p className="mb-7 text-sm uppercase tracking-[0.14em] text-muted">NARMA.DESIGN / Artwork</p>
+          <p className="mb-7 text-sm uppercase tracking-[0.14em] text-muted">Visual study / Undated</p>
           <h2 id="experiment-heading" className="editorial-title max-w-[7ch] text-6xl leading-[0.88] tracking-[-0.055em] sm:text-8xl">
-            A study<br />
-            in form.
+            Geometry<br />
+            in motion.
           </h2>
           <p className="mt-7 max-w-sm text-base leading-7 text-muted">
-            An original geometric composition, shifted through three states.
+            NARMA’s supplied geometric SVG artwork, explored through three visual states.
           </p>
           <ol className="mt-10 flex flex-wrap gap-2" aria-label="Artwork timeline stages">
             {stages.map((stage, index) => (

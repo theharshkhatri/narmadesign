@@ -56,7 +56,7 @@ A Lighthouse score alone does not prove accessibility, real-device performance, 
 
 ## Phase 6 evidence — 2026-10-15
 
-- `pnpm build` passed. The static routes `/`, `/work`, `/studio`, and `/contact` prerender successfully.
+- `pnpm build` passed. The static routes `/`, `/work`, `/approach`, and `/contact` prerender successfully.
 - `pnpm exec tsc --noEmit` passed.
 - Browser checks confirmed no horizontal overflow at 375px, 768px, 1024px, or 1440px viewport widths.
 - Browser checks confirmed the supplied transparent wordmark renders, the mobile menu opens/closes with Escape, the skip link targets `#main-content`, and contact form fields expose accessible labels.
@@ -68,7 +68,7 @@ A Lighthouse score alone does not prove accessibility, real-device performance, 
 - Campaign image sources and licensing notes are recorded in [`docs/assets/portfolio-image-sources.md`](../assets/portfolio-image-sources.md) and linked from each detail page.
 - The homepage campaign atlas uses a scoped pointer-drag interaction with a complete static image grid, readable labels, and a reduced-motion-safe CSS fallback.
 - The homepage atlas uses the downloaded ObsidianUI Art Gallery source with local campaign assets; WebGL support, loading, cleanup, pointer drag, and reduced-motion fallback require browser verification.
-- The Studio point-of-view section uses an original finite Word Slide timeline; its complete semantic statement remains visible in reduced-motion mode.
+- The Approach point-of-view section uses an original finite Word Slide timeline; its complete semantic statement remains visible in reduced-motion mode.
 - The homepage capabilities map includes the 12 supplied categories and labels its scope as illustrative rather than claiming confirmed availability or client work.
 - On medium-and-larger screens, the capabilities map uses one finite, scrubbed interaction based on the first two GSAPify Premium Collection patterns: centered cards spread, then advance one at a time as a slider; small screens and reduced-motion mode retain the complete stacked list.
 
@@ -92,12 +92,22 @@ A Lighthouse score alone does not prove accessibility, real-device performance, 
 - The user confirmed the active category images are NARMA-created and cleared
   for publication. Asset provenance is recorded in
   `docs/assets/portfolio-image-sources.md`.
-- The user-approved Studio point-of-view paragraph is live on `/studio` and is
+- The user-approved point-of-view paragraph is live on `/approach` and is
   recorded in `docs/reviews/studio-point-of-view-draft.md`.
 - Direct `tsc --noEmit` passed after the changes. ESLint could not run because
   the installed TypeScript 7.0.2 is unsupported by the installed
   `typescript-eslint`; the Next build could not canonicalize the workspace path
   due Windows access denied. These checks are not marked verified.
+
+## Naming direction update — 2026-10-15
+
+- The owner confirmed the public name is NARMA.design only and requested no
+  studio, agency, startup, or registration claim. The public navigation uses
+  Approach, served at `/approach`; `/studio` redirects there for older links.
+- Current service names are owner-approved drafts. Final service wording remains
+  open pending owner answers.
+- The owner identified growing brands as the primary audience and approved the
+  three current service names as drafts; the client change remains open.
 
 ## Homepage redesign — 2026-10-15
 

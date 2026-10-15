@@ -12,7 +12,7 @@ The intended structure includes:
 - Shared layout: header, footer, mobile menu
 - Homepage: hero, selected work, experiment, services, CTA
 - Portfolio: work index and `[slug]` case study
-- Studio: philosophy, process, capabilities
+- Approach: point of view, process, capabilities
 - Contact: enquiry form, validation, email CTA
 - Privacy: privacy information when the production flow requires it
 
