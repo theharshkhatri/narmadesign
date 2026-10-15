@@ -19,8 +19,19 @@ https://images.pexels.com/photos/6620963/pexels-photo-6620963.jpeg
 
 These locally stored Pexels references came from an earlier concept-campaign
 iteration. They are retained in `public/campaigns/` for source and license
-provenance, but no active route or component uses them. The current site uses
-the supplied SVG artwork for its graphic-design imagery.
+provenance, but no active route or component uses them.
+
+## Active category portfolio images
+
+The portfolio and capability sections currently use optimized exports in
+`public/category/optimized/*.webp`. NARMA confirmed on 2026-10-15 that these
+images are NARMA-created, approved portfolio work, and cleared for publication.
+No external source or license URL applies. Current project records remain
+labeled as speculative concepts and undated; no client or outcome claims are
+made.
+
+The original PNG exports are retained outside `public/` under
+`source-assets/category/`; only optimized WebP versions are served by the site.
 
 Pexels permits use of these photos under the [Pexels
 License](https://www.pexels.com/license/). These files do not represent NARMA

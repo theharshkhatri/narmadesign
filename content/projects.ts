@@ -1,6 +1,7 @@
 import type { Project } from "@/lib/project-schema";
 
-// Approved portfolio artwork from public/category/optimized, presented as experimental studies.
+// NARMA-created, user-approved portfolio studies from public/category/optimized.
+// They remain labeled speculative and undated; no client or outcome claims are made.
 export const projects: readonly Project[] = [
   {
     slug: "layered-profile-layout",

@@ -46,7 +46,17 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
   }
 
   function handleViewerKeyDown(event: ReactKeyboardEvent<HTMLDialogElement>) {
-    if (event.key === "+" || event.key === "=") {
+    const viewport = imageViewportRef.current;
+    const viewportHasFocus = viewport?.contains(document.activeElement) ?? false;
+    if (zoom > 1 && viewportHasFocus && viewport && event.key.startsWith("Arrow")) {
+      event.preventDefault();
+      const step = 56;
+      viewport.scrollBy({
+        left: event.key === "ArrowLeft" ? -step : event.key === "ArrowRight" ? step : 0,
+        top: event.key === "ArrowUp" ? -step : event.key === "ArrowDown" ? step : 0,
+        behavior: "smooth",
+      });
+    } else if (event.key === "+" || event.key === "=") {
       event.preventDefault();
       setZoom((value) => Math.min(4, value + 0.25));
     } else if (event.key === "-") {
@@ -224,7 +234,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
         {activeProject ? (
           <div className="relative h-dvh w-screen">
             <p id="image-viewer-instructions" className="sr-only">
-              Scroll over the image to zoom around the pointer. Double-click the image to toggle zoom. Use plus or minus to adjust zoom, zero to reset, and drag to pan when zoomed. Press Escape to close.
+              Scroll over the image to zoom around the pointer. Double-click the image to toggle zoom. Use plus or minus to adjust zoom, zero to reset, arrow keys while the image area is focused or drag to pan when zoomed. Press Escape to close.
             </p>
             <p className="sr-only" aria-live="polite">{Math.round(zoom * 100)} percent zoom</p>
             <button
@@ -239,6 +249,8 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
             </button>
             <div
               ref={imageViewportRef}
+              tabIndex={0}
+              aria-label="Image. Focus here and use arrow keys to pan when zoomed."
               className={`image-viewer-viewport absolute inset-0 overflow-auto ${zoom > 1 ? "cursor-grab touch-none active:cursor-grabbing" : "cursor-zoom-in"}`}
               onDoubleClick={handleImageDoubleClick}
               onPointerDown={startPan}

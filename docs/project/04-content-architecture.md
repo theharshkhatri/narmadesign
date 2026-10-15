@@ -33,13 +33,17 @@ Use one central TypeScript source for homepage and work index content. Each proj
 
 Use a union for `projectType` (for example commissioned, self-initiated, or speculative concept), enforce unique URL-safe slugs, and handle optional sections without broken placeholders. Never store fake testimonials, invented clients, or unsupported outcomes.
 
-The current work archive uses the supplied SVG assets as explicitly labeled
-self-initiated visual studies. Do not present them as commissioned work, client
-results, or client-owned assets. Any external image added later requires a
-recorded source URL and license record.
+The current work archive uses NARMA-created category imagery as explicitly
+labeled speculative concepts and undated studies. Do not present them as
+commissioned work, client results, or client-owned assets. Any external image
+added later requires a recorded source URL and license record.
 
 ## Contact requirements
 
 The two useful paths are an enquiry form and direct email. Proposed fields are name, email, optional organization, service required, optional budget range, desired timeline, and project description.
 
-The current direct email is **Open** and must not be invented. A frontend-only prototype must be labeled as such. Before production release, submission requires server-side validation/sanitization, rate limiting and abuse protection, secure handling, a real delivery destination, honest success/failure states, a privacy notice, and a retention policy.
+The verified direct email is `narma.design@gmail.com`. Gmail SMTP is the selected
+form-delivery provider, but the form remains disabled until local credentials,
+durable rate limiting and abuse protection, secure handling, an accurate
+privacy notice, and a retention policy are configured. The current form must
+continue to say clearly that it does not send messages.

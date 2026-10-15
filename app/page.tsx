@@ -2,7 +2,7 @@ import { DiscoverLink } from "@/components/ui/DiscoverLink";
 import { DraggableProjectGallery } from "@/components/home/DraggableProjectGallery";
 import { HeroSection } from "@/components/home/HeroSection";
 import { ScrollExperiment } from "@/components/home/ScrollExperiment";
-import { ServicesSection } from "@/components/home/ServicesSection";
+import { HomeServicePillars } from "@/components/home/HomeServicePillars";
 import { CapabilitiesSection } from "@/components/home/CapabilitiesSection";
 import { ProjectGrid } from "@/components/home/ProjectGrid";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -26,7 +26,7 @@ export default function Home() {
           <ProjectGrid projects={projects} />
         </section>
         <ScrollExperiment />
-        <ServicesSection />
+        <HomeServicePillars />
         <CapabilitiesSection />
       </main>
       <SiteFooter />

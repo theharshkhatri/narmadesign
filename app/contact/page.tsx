@@ -15,7 +15,7 @@ export default function ContactPage() {
       <main id="main-content">
         <PageIntro
           title="Project enquiries."
-          description="Use the form to outline your project. This prototype does not send messages."
+          description="The enquiry form is being prepared. You can reach the studio directly by email."
         />
         <section className="site-container py-16 sm:py-24">
           <div className="site-grid">
@@ -25,8 +25,11 @@ export default function ContactPage() {
             <div className="col-span-4 md:col-span-8 md:col-start-5">
               <ProjectInquiryForm />
               <p className="mt-12 border-t border-ink/15 pt-6 text-sm leading-6 text-muted">
-                Direct email is not configured yet. A real studio address must be supplied before
-                a live contact flow is released.
+                Prefer email? Write to{" "}
+                <a className="underline decoration-ink/30 underline-offset-4 hover:decoration-ink" href="mailto:narma.design@gmail.com">
+                  narma.design@gmail.com
+                </a>
+                .
               </p>
             </div>
           </div>

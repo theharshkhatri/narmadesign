@@ -37,8 +37,8 @@ export function ProjectInquiryForm() {
         id="prototype-form-notice"
         className="border border-ink/40 bg-gold/10 p-4 text-sm leading-6 text-muted"
       >
-        Enquiry details are checked by the server. Message delivery is not configured yet, so this
-        form will not send your enquiry.
+        This form is not connected yet and will not send your enquiry. Please use the studio email
+        listed below instead.
       </p>
       <div className="grid gap-8 sm:grid-cols-2">
         <label className="flex flex-col gap-2 text-sm">

@@ -72,6 +72,33 @@ A Lighthouse score alone does not prove accessibility, real-device performance, 
 - The homepage capabilities map includes the 12 supplied categories and labels its scope as illustrative rather than claiming confirmed availability or client work.
 - On medium-and-larger screens, the capabilities map uses one finite, scrubbed interaction based on the first two GSAPify Premium Collection patterns: centered cards spread, then advance one at a time as a slider; small screens and reduced-motion mode retain the complete stacked list.
 
+## Site review follow-up — 2026-10-15
+
+- The 23 original category PNGs were moved from `public/category/` to
+  `source-assets/category/`; all 23 optimized WebP assets remain in `public/`.
+- The homepage now presents three service pillars before the separate eight
+  category capability map.
+- The optional homepage WebGL gallery is dynamically loaded near the viewport
+  for fine-pointer users without reduced motion. A static linked image grid is
+  rendered first and remains available on touch and reduced-motion devices.
+- The image viewer now supports arrow-key panning while zoomed and focused.
+  Keyboard behavior still requires browser QA.
+- Baseline security headers are configured in `next.config.ts`; the live
+  response headers remain unverified because the local runtime could not start.
+- The contact page links to the user-verified address
+  `narma.design@gmail.com`. Form delivery remains disabled. Gmail SMTP
+  credentials, durable rate limiting, and an approved privacy/retention policy
+  are still required before enabling submission.
+- The user confirmed the active category images are NARMA-created and cleared
+  for publication. Asset provenance is recorded in
+  `docs/assets/portfolio-image-sources.md`.
+- The user-approved Studio point-of-view paragraph is live on `/studio` and is
+  recorded in `docs/reviews/studio-point-of-view-draft.md`.
+- Direct `tsc --noEmit` passed after the changes. ESLint could not run because
+  the installed TypeScript 7.0.2 is unsupported by the installed
+  `typescript-eslint`; the Next build could not canonicalize the workspace path
+  due Windows access denied. These checks are not marked verified.
+
 ## Homepage redesign — 2026-10-15
 
 Requirement applied from [Creative direction](./01-creative-direction.md): “The experience is light-first, typography-led, geometry-driven, and editorial.”
